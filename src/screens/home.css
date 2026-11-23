@@ -1,0 +1,46 @@
+.h-carousel { gap: 6px; padding: 0; scroll-snap-type: x mandatory; background: var(--card); }
+.h-slide { position: relative; flex: none; width: 322px; height: 230px; scroll-snap-align: start; overflow: hidden; }
+.h-slide:last-child { margin-right: 62px; }
+.h-slide img { width: 100%; height: 100%; object-fit: cover; }
+.h-slide-btns { position: absolute; left: 0; right: 0; bottom: 14px; display: flex; justify-content: center; gap: 14px; }
+.pill-cream { background: #efecd9; color: #1d4c3c; border-radius: 16px; padding: 5px 13px; font-size: 16.5px; font-weight: 600; box-shadow: 0 2px 4px rgba(0,0,0,.18); }
+.pill-dark { background: #12493a; color: #fff; border-radius: 16px; padding: 5px 13px; font-size: 16.5px; font-weight: 600; box-shadow: 0 2px 4px rgba(0,0,0,.18); }
+
+.h-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 9px 9px; padding: 14px 13px 4px; background: var(--card); }
+.h-stat { height: 82px; border: 1.3px solid #e3ebe8; border-radius: 9px; display: flex; align-items: center; gap: 8px; padding: 0 8px 0 9px; background: var(--card); box-shadow: 0 1px 2px rgba(0,0,0,.05); }
+[data-theme='dark'] .h-stat { border-color: var(--border); }
+.h-stat .ic { color: #2f5f52; display: grid; }
+[data-theme='dark'] .h-stat .ic { color: #7ad1b5; }
+.h-stat .lb { font-size: 14px; font-weight: 500; }
+.h-stat .vl { font-size: 16.5px; font-weight: 700; margin: 6px 0 0 10px; }
+
+.h-title { margin: 0; padding: 14px 10px 8px; font-size: 14.5px; font-weight: 600; color: #3f6f61; background: var(--card); text-decoration: underline; text-decoration-color: #cfe3dc; text-underline-offset: 4px; }
+[data-theme='dark'] .h-title { color: #7ad1b5; }
+.h-cats { gap: 10px; padding: 0 0 10px; background: var(--card); }
+.h-cat { flex: none; width: 112px; height: 144px; border-radius: 6px; overflow: hidden; position: relative; }
+.h-cat img { width: 100%; height: 100%; object-fit: cover; }
+.h-cat span { position: absolute; left: 0; right: 0; bottom: 0; padding: 14px 0 5px; font-size: 10px; color: #3b8a74; font-weight: 600; background: linear-gradient(transparent, rgba(255,255,255,.95) 55%); }
+
+.h-how { margin: 6px 5px 0; background: #f9866f; color: #fff; border-radius: 9px; padding: 8px 13px 10px; box-shadow: 0 2px 4px rgba(0,0,0,.15); }
+.h-how b { font-size: 16px; font-weight: 500; }
+.h-how p { margin: 3px 0 0; font-size: 13.2px; line-height: 1.35; }
+
+.h-newsletter { display: flex; align-items: center; margin: 14px 5px 0; width: calc(100% - 10px); height: 90px; border-radius: 16px; border: 1.3px solid #d7d7d7; background-color: #fff; background-image: linear-gradient(#e7e7e7 1px, transparent 1px), linear-gradient(90deg, #e7e7e7 1px, transparent 1px); background-size: 16px 16px; position: relative; overflow: visible; }
+.h-newsletter span { flex: 1; text-align: left; padding-left: 38px; font-size: 15.5px; font-weight: 600; color: #2a6f5a; }
+.h-newsletter img { width: 92px; position: absolute; right: 8px; bottom: -8px; }
+
+.h-feat-wrap { background: var(--card); padding-bottom: 14px; }
+.h-feat { gap: 10px; padding: 6px 0 0 6px; background: linear-gradient(var(--card) 0, var(--mint-2) 100%); }
+.h-fcard { flex: none; width: 112px; background: var(--card); border-radius: 6px; overflow: hidden; text-align: left; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+.h-fcard .im { height: 92px; background: #f3f3f3; display: grid; place-items: center; overflow: hidden; }
+.h-fcard .im img { width: 100%; height: 100%; object-fit: cover; }
+.h-fcard .bd { padding: 5px 5px 6px; }
+.h-fcard .nm { display: flex; justify-content: space-between; align-items: center; font-family: var(--font-2); font-size: 7.4px; font-weight: 700; gap: 2px; }
+.h-fcard .nm span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.h-fcard .cd { font-family: var(--font-2); font-size: 7px; margin-top: 2px; }
+.h-fcard .km { display: flex; justify-content: space-between; font-family: var(--font-2); font-size: 6px; margin-top: 8px; color: #555; }
+[data-theme='dark'] .h-fcard .km { color: var(--muted); }
+
+.h-cta { margin: 14px 0 0; height: 130px; background: linear-gradient(90deg, #1aaa89, #4ec6b2); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: #fff; text-align: center; }
+.h-cta p { margin: 0; padding: 0 20px; font-size: 18px; line-height: 1.25; font-weight: 500; }
+.h-cta .pill-cream { font-size: 16px; padding: 5px 14px; box-shadow: none; }
